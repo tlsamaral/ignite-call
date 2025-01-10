@@ -5,7 +5,7 @@ import GoogleProvider, { GoogleProfile } from 'next-auth/providers/google'
 
 export function buildNextAuthOptions(
   req: NextApiRequest | NextPageContext['req'],
-  res: NextApiResponse | NextPageContext['req'],
+  res: NextApiResponse | NextPageContext['res'],
 ): NextAuthOptions {
   return {
     adapter: PrismaAdapter(req, res),

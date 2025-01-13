@@ -10,7 +10,6 @@ export default function ConnectCalendar() {
   const router = useRouter()
 
   const hasAuthError = !!router.query?.error
-  console.log(session)
   const isSignedIn = session.status === 'authenticated'
 
   async function handleConnectCalendar() {
